@@ -20,8 +20,18 @@ A sintaxe padrão é definida por ``@Funcao { Argumentos ... }``, onde os argume
 O operador ::=
 --------------
 
-O operador ``::=`` pode aqui ser conhecido como "aplicação de bloco". Ele serve para funções do Prelude que recebam somente 2 argumentos, sendo estes listas e blocos. São, basicamente, uma abstração:
+O operador ``::=`` pode aqui ser conhecido como "aplicação de bloco". Ele serve para funções do Prelude que recebam somente 2 argumentos, frequentemente, listas e blocos. São, basicamente, uma abstração:
 
 .. literalinclude:: demo/operador.hb
+   :language: xbase
+   :linenos:
+
+-------------
+O operador Of
+-------------
+
+O operador ``Of`` se comporta de maneira similar ao operador ``::=``, mas com a ordem reversa de seus operandos. Exemplos:
+
+.. literalinclude:: demo/of.hb
    :language: xbase
    :linenos:
