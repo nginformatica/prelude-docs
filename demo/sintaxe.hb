@@ -17,4 +17,4 @@ Local aNomes := { "Lorem", "Ipsum", "Dolor", "Sit" } ;
 // usando @Take para obter apenas os três primeiros nomes
 // da lista.
 Local aIdade := { 20, 18, 25, 43, 21, 21, 29 } ;
-      aInic  := @Take { 20, aIdade }
+      aInic  := @Take { 3, aIdade }
