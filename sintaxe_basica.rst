@@ -10,7 +10,7 @@ O Prelude HB/AdvPL também estende uma sintaxe específica através do pré-proc
 Padrão
 ------
 
-A sintaxe padrão é definida por `@Funcao { Argumentos ... }`, onde os argumentos são separados por `,`. Exemplos:
+A sintaxe padrão é definida por ``@Funcao { Argumentos ... }``, onde os argumentos são separados por ``,``. Exemplos:
 
 .. literalinclude:: demo/sintaxe.hb
    :language: xbase

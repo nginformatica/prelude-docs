@@ -15,6 +15,6 @@ Local aNomes := { "Lorem", "Ipsum", "Dolor", "Sit" } ;
 
 // Definindo aIdade como um array de idades e, em seguida,
 // usando @Take para obter apenas os três primeiros nomes
-// da lista
+// da lista.
 Local aIdade := { 20, 18, 25, 43, 21, 21, 29 } ;
       aInic  := @Take { 20, aIdade }
