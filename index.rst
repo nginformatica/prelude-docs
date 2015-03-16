@@ -19,11 +19,9 @@ A biblioteca implementa conceitos de programação funcional e é incapaz de int
   intervalos
   sintaxe_basica
 
-**Bibliotecas**:
+**Referência de Funções**:
 
 .. toctree::
   :maxdepth: 2
 
-  listas
-  strings
-  numericos
+  z_range
