@@ -22,6 +22,6 @@ A biblioteca implementa conceitos de programação funcional e é incapaz de int
 **Referência de Funções**:
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
 
   z_range

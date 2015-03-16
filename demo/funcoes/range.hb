@@ -1,9 +1,9 @@
-Local nOneToTen := @Range { 1, 10 }
+Local aOneToTen := @Range { 1, 10 }
 
 // Ou
 
-Local nOneToTen := @Range 1 Of 10
+Local aOneToTen := @Range 1 Of 10
 
 // Ou
 
-Local nOneToTen := @{ 1 .. 10 }
+Local aOneToTen := @{ 1 .. 10 }
