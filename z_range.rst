@@ -13,3 +13,5 @@ Exemplos
 --------
 
 .. literalinclude:: demo/funcoes/range.hb
+	:language: xbase
+	:linenos:
