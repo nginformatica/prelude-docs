@@ -24,6 +24,7 @@ A biblioteca implementa conceitos de programação funcional e é incapaz de int
 .. toctree::
   :maxdepth: 1
 
+  z_compact
   z_each
   z_map
   z_range
