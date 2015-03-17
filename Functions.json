@@ -42,4 +42,26 @@
                , "30, com um intervalo de 3: ``{ 3, 6, 9, 12, 15 ... }``." ]
     }
   }
+, "z_each": {
+    "name": "Each"
+  , "type": "Array Each( bBloco, aLista )"
+  , "description": [ "Aplica uma função para cada item da lista e retorna a "
+                   , "lista original." ]
+  , "sample": {
+      "file": "z_each"
+    , "content": [ "Local aLangList := { \"PHP\", \"Haskell\", \"Perl\" }"
+                 , "    , bPrint    := { |X| qOut( X ) }"
+                 , ""
+                 , "@Each { bPrint, aLangList }"
+                 , ""
+                 , "// Ou"
+                 , ""
+                 , "@Each bPrint Of aLangList"
+                 , ""
+                 , "// Ou"
+                 , "@Each aLangList ::= bPrint" ]
+    , "about": [ "Essa função irá dar saída linha a linha de cada um dos itens "
+               , "da lista." ]
+    }
+  }
 }
