@@ -1,5 +1,4 @@
 <?php
-
   try {
     # Samples sources are stored inside functions folder
     if (!is_dir("samples"))
