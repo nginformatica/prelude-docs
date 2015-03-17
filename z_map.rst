@@ -12,7 +12,7 @@ Aplica uma função para cada elemento da lista e produz uma nova lista com os r
 Exemplos
 --------
 
-.. literalinclude:: samples/z_map.prg
+.. literalinclude:: samples/z_shit.prg
    :language: xbase
    :linenos:
 
