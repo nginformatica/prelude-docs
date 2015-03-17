@@ -12,8 +12,9 @@ Aplica uma função para cada elemento da lista e produz uma nova lista com os r
 Exemplos
 --------
 
-.. literalinclude:: demo/funcoes/map.hb
-	:language: xbase
-	:linenos:
+.. literalinclude:: samples/z_map.prg
+   :language: xbase
+   :linenos:
 
-Onde todas as últimas expressões retornarão um array de 3 a 30, com um intervalo de 3: ``{ 3, 6, 9, 12, 15 ... }``
+Onde todas as últimas expressões retornarão um array de 3 a 30, com um intervalo de 3: ``{ 3, 6, 9, 12, 15 ... }``.
+

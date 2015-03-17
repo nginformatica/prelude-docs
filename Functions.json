@@ -1,0 +1,45 @@
+{
+  "z_range": {
+    "name": "Range"
+  , "type": "Array Range( Number inicio, Number fim )"
+  , "description": [ "Recebe um parâmetro numérico de início e outro de fim e "
+                   , "retorna um array com os valores dentro do dado intervalo."
+                   , "\nCostuma ser abreviada pela sintaxe definida pelo "
+                   , "pré-processador ``@{ inicio .. fim }``." ]
+  , "sample": {
+      "file": "z_range"
+    , "content": [ "Local aOneToTen := @Range { 1, 10 }"
+                 , ""
+                 , "// Ou"
+                 , ""
+                 , "Local aOneToTen := @Range 1 Of 10"
+                 , "// Ou"
+                 , "Local aOneToTen := @{ 1 .. 10 }" ]
+    , "about": [ ]
+    }
+  }
+, "z_map": {
+    "name": "Map"
+  , "type": "Array Map( bBloco, aLista )"
+  , "description": [ "Aplica uma função para cada elemento da lista e produz "
+                   , "uma nova lista com os resultados. O tamanho da lista de "
+                   , "saída é o mesmo da lista de entrada." ]
+  , "sample": {
+      "file": "z_map"
+    , "content": [ "Local aOneToTen   := @{ 1 .. 10 }  ;"
+                 , "    , bTimesThree := { |X| X * 3 }"
+                 , ""
+                 , "aTimesThree := @Map { bTimesThree, aOneToTen }"
+                 , ""
+                 , "// Ou"
+                 , ""
+                 , "aTimesThree := @Map bTimesThree Of aOneToTen"
+                 , ""
+                 , "// Ou"
+                 , ""
+                 , "aTimesThree := @Map aOneToTen ::= bTimesThree" ]
+    , "about": [ "Onde todas as últimas expressões retornarão um array de 3 a "
+               , "30, com um intervalo de 3: ``{ 3, 6, 9, 12, 15 ... }``." ]
+    }
+  }
+}
