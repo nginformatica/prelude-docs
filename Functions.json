@@ -64,4 +64,16 @@
                , "da lista." ]
     }
   }
+, "z_compact": {
+    "name": "Compact"
+  , "type": "Array Compact( aLista )"
+  , "description": [ "Recebe uma lista e retorna apenas os elementos "
+                   , "verdadeiros desta." ]
+  , "sample": {
+      "file": "z_compact"
+    , "content": [ "Local aLangList := { .T., .F., .T., .T., .F. } ;"
+                 , "    , aTValue   := @Compact { aLangList }" ]
+    , "about": [ "A saída dessa função será ``{ .T., .T., .T. }``." ]
+    }
+  }
 }
