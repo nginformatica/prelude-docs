@@ -1,0 +1,1 @@
+fun ::= Fun ( [ <ident> [, <ident> [, <ident> ] ] ] ) -> <expr>

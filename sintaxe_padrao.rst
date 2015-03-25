@@ -24,7 +24,7 @@ Vamos imaginar que queremos realizar a seguinte operação:
 - **Criar uma lista** com os elementos de 1 a 50; ``@{}``
 - Obter os **20 primeiros elementos** desta; ``@Take``
 - **Mapear** e dobrar o valor de cada elemento obtido; ``@Map``
-- Mostrar ao usuário **cada** elemento em um alert. ``@Each``
+- Mostrar ao usuário **cada** elemento em um ``Alert``. ``@Each``
 
 Devemos fazer:
 
