@@ -20,7 +20,7 @@ Exemplos
 
 Temos duas opções para intervalos numéricos: ``@{ x .. y }``, sendo ``x`` o
 valor inicial e ``y`` o valor final; e ``@{ x, y .. z }``, sendo ``x`` o valor
-inicial, ``z` o valor final, seguindo num intervalo de ``y - x``. Exemplos:
+inicial, ``z`` o valor final, seguindo num intervalo de ``y - x``. Exemplos:
 
 .. literalinclude:: examples/sintaxe_intervalos.prg
    :linenos:
