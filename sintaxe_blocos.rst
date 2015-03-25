@@ -20,3 +20,9 @@ Definição Formal
 --------
 Exemplos
 --------
+
+.. Vamos fazer testes simples com operações aritméticas.
+
+.. literalinclude:: examples/sintaxe_blocos.prg
+   :language: xbase
+   :linenos:
