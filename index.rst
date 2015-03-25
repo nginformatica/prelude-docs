@@ -3,8 +3,8 @@ Prelude AdvPL
 =========================================
 
 .. image:: https://readthedocs.org/projects/prelude/badge/?version=latest
-:target: https://readthedocs.org/projects/prelude/?badge=latest
-:alt: Status da Documentação
+   :target: https://readthedocs.org/projects/prelude/?badge=latest
+   :alt: Status da Documentação
 
 ------------------------
 Sobre o Prelude AdvPL
