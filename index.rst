@@ -59,7 +59,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
 
 .. toctree::
    :maxdepth: 1
-   introducao_cast
+   cast_docs
 
 **Estendendo a Biblioteca**:
 
@@ -70,4 +70,6 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
   prelude_functions
   validate_functions
 
-**Informações?** Marcelo Camargo <marcelo.camargo@ngi.com.br> <marcelocamargo@linuxmail.org>
+**Informações?** 
+
+Marcelo Camargo <marcelo.camargo@ngi.com.br> <marcelocamargo@linuxmail.org>
