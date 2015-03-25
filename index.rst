@@ -49,6 +49,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    :maxdepth: 2
 
    cast_functions
+   prelude_functions
    validate_functions
    
 
