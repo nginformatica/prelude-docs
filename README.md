@@ -1,4 +1,3 @@
-# prelude-docs
-Documentation for Prelude Harbour/AdvPL
+# Documentação do Prelude para AdvPL
 
-# Copyleft (C)
+# Copyright 2015 - NG Informática (C)
