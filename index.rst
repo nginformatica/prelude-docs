@@ -69,3 +69,5 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
   cast_functions
   prelude_functions
   validate_functions
+
+**Informações?** Marcelo Camargo <marcelo.camargo@ngi.com.br> <marcelocamargo@linuxmail.org>
