@@ -43,24 +43,13 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    sintaxe_aplicacao
    sintaxe_retencao
 
-**Prelude Functions**:
+**Tipos de Funções**:
 
 .. toctree::
-   :maxdepth: 1
-   introducao_prelude
+   :maxdepth: 2
 
-**Validate Functions**:
-
-.. toctree::
-   :maxdepth: 1
-   introducao_validate
-
-**Cast Functions**:
-
-.. toctree::
-   :maxdepth: 1
-
-   cast_docs
+   cast_functions
+   
 
 **Estendendo a Biblioteca**:
 
