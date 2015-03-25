@@ -51,17 +51,9 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    cast_functions
    prelude_functions
    validate_functions
-   
-
-**Estendendo a Biblioteca**:
-
-.. toctree::
-  :maxdepth: 2
-
-  extend_cast
-  extend_prelude
-  extend_validate
 
 **Informações?** 
 
 Marcelo Camargo <marcelo.camargo@ngi.com.br> <marcelocamargo@linuxmail.org>
+
+Última modificação por **Marcelo Camargo** às 16:53 do dia 25/03/2015.
