@@ -13,7 +13,7 @@ Sobre o Prelude AdvPL
 O Prelude AdvPL é uma biblioteca para AdvPL altamente compatível com Harbour que
 visa a implementação de conceitos funcionais na linguagem e melhoria na
 qualidade de código. A biblioteca implementa uma sintaxe expressiva e permite
-uma maior abstração do domínio da aplicação, evitando _boilerplate_ e código
+uma maior abstração do domínio da aplicação, evitando *boilerplate* e código
 desnecessário, além de ter um cuidado especial com a performance.
 
 Através do pré-processador são implementadas features extras em cima da
