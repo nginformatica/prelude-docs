@@ -1,0 +1,1 @@
+func_comp ::= <ident> >>= <ident> In <expr>
