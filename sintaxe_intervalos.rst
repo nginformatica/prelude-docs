@@ -11,5 +11,17 @@ evitando que sejam criadas instruções desnecessárias para tal, como loops.
 Definição Formal
 ----------------
 
-.. literalinclude:: grammar/sintaxeintervalos.bnf
+.. literalinclude:: grammar/sintaxe_intervalos.bnf
    :language: pascal
+
+--------
+Exemplos
+--------
+
+Temos duas opções para intervalos numéricos: ``@{ x .. y }``, sendo ``x`` o
+valor inicial e ``y`` o valor final; e ``@{ x, y .. z }``, sendo ``x`` o valor
+inicial, ``z` o valor final, seguindo num intervalo de ``y - x``. Exemplos:
+
+.. literalinclude:: grammar/sintaxe_intervalos.prg
+   :linenos:
+   :language: xbase
