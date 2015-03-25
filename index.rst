@@ -59,6 +59,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
 
 .. toctree::
    :maxdepth: 1
+
    cast_docs
 
 **Estendendo a Biblioteca**:
