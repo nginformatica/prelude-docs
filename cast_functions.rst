@@ -12,6 +12,7 @@ Cast Functions
    inteira e decimal informado como parâmetro, desconsiderando todos os dígitos
    à direta do ponto decimal.
 
-.. codeblock:: xbase
+.. code-block:: xbase
 
    @Cast<Int> 87.2 // => 87
+
