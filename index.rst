@@ -49,6 +49,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    :maxdepth: 2
 
    cast_functions
+   validate_functions
    
 
 **Estendendo a Biblioteca**:
@@ -56,9 +57,9 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
 .. toctree::
   :maxdepth: 2
 
-  cast_functions
-  prelude_functions
-  validate_functions
+  extend_cast
+  extend_prelude
+  extend_validate
 
 **Informações?** 
 

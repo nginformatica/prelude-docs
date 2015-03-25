@@ -26,7 +26,7 @@ Cast Functions
    
 .. function:: @Cast<Str>
 
-   A partir de um numérico esta função retorna uma string formatada, inserindo
+   A partir de um numérico, esta função retorna uma string formatada, inserindo
    espaços (" ") à esquerda e/ou o símbolo decimal (".") em suas casas, de
    acordo com a informação do parâmetro.
 
