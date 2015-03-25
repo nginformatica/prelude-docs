@@ -21,7 +21,7 @@ Definição Formal
 Exemplos
 --------
 
-.. Vamos fazer testes simples com operações aritméticas.
+Vamos realizar alguns testes com operações simples:
 
 .. literalinclude:: examples/sintaxe_blocos.prg
    :language: xbase
