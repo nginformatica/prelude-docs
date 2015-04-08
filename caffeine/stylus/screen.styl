@@ -1,0 +1,588 @@
+@import "./vendor"
+@import "./caffeine_vars.css"
+@import url("http://fonts.googleapis.com/css?family=Raleway:300|Source+Sans+Pro:400,600,400italic|Source+Code+Pro");
+
+
+text-font  = "Source Sans Pro"
+code-font  = "Source Code Pro", monospace
+title-font = "Raleway", sans-serif
+
+
+// ------------------------------------------------------------------------
+// Mixins
+// ------------------------------------------------------------------------
+
+base-link()
+  color: #369
+  text-decoration: none
+  &:hover
+    color: #69a
+
+fix-margin()
+  *:last-child
+    margin-bottom: 0px
+
+
+
+// ------------------------------------------------------------------------
+// Base
+// ------------------------------------------------------------------------
+
+*
+  margin: 0
+  padding: 0
+
+body
+  background: #fafafa
+  font-family: text-font
+  color: #4f4f4f
+  font-size: 13pt
+
+
+// ------------------------------------------------------------------------
+// Layout
+// ------------------------------------------------------------------------
+
+#header
+  margin: 0 auto 2em auto
+  border-bottom: 1px solid #d0d0d0
+  background: #ecf0f1
+
+  .chapter, .project-name, .project-version
+    width: 940px
+    margin: 0 auto
+  
+  .project-name
+    font-size: 62px
+    line-height: 100px
+    padding-top: 20px
+    width: 940px
+    height: 100px
+    text-shadow: #fff 0px 0px 1px
+    a
+      color: #4f4f4f
+      text-decoration: none
+
+
+  .project-version
+    color: #aaa
+    line-height: 20px
+    position: relative
+    width: 620px
+    font-size: 14px
+    text-shadow: #fff 0px 0px 1px
+    text-transform: uppercase
+    font-weight: bold
+    
+  .chapter-wrapper
+    margin-top: 20px
+    border-top: 1px solid #e5e5e5
+
+  .chapter
+    line-height: 60px
+    font-size: 28px
+    color: #999
+    font-weight: 300
+    font-family: title-font
+
+    a
+      base-link()
+      
+
+.document
+  width: 940px
+  margin: 0 auto
+
+  .bodywrapper
+    width: 700px
+    float: right
+
+  .sphinxsidebar
+    width: 200px
+    float: left
+    overflow-x: hidden
+    overflow-y: auto
+
+  .body .section:first-child h1:first-of-type
+    display: none
+
+
+.clearer
+  clear: both
+
+#searchbox
+  input[type="text"]
+    line-height: 28px
+    height: 28px
+    color: #777
+    border: 1px solid #ddd
+    border-radius: 3px
+    margin: 10px 5px 25px 5px
+    padding: 0 5px
+    width: 180px
+
+    &:focus
+      outline: none
+      box-shadow: rgba(64, 128, 255, 0.6) 0 0 5px
+      border-color: #69a
+
+
+#toc
+  font-size: 80%
+
+  & > ul > li > a
+    line-height: 32px
+    color: #777
+    border-bottom: 2px solid #69a
+    margin-bottom: 10px
+    font-weight: bold
+    text-decoration: none
+    display: block
+    
+    
+  & > ul ul
+    list-style: none
+    ul
+      margin-left: 15px
+
+    li a
+      line-height: 20px
+      min-height: 20px
+      color: #999
+      text-decoration: none
+      border-left: 4px solid transparent
+      display: block
+      padding: 5px 5px 5px 10px
+      border-bottom: 1px solid #ddd
+    
+      &:hover
+        color: #4f4f4f
+        background: #ececea
+        border-left: 4px solid #34495e
+
+      &.active
+        color: #ecf0f1
+        background: #2980b9
+        font-weight: bold
+      
+
+#footer
+  background: #e7e7e7
+  color: #7f8c8d
+  border-top: 1px solid #d7d7d7
+  font-size: 0.9em
+  padding: 3em 2em
+  text-align: center
+  margin-top: 2em
+  letter-spacing: 2px
+
+  a
+    base-link()
+  
+  .heart
+    color: #e74c3c
+    font-size: 200%
+    vertical-align: middle
+    position: relative
+    font-family: text-font
+
+  .copy-info, .gen-info
+    display: block
+
+  .additional-footer
+    margin-top: 2em
+  
+
+
+// ------------------------------------------------------------------------
+// Documentation styles
+// ------------------------------------------------------------------------
+.body
+  font-family: text-font
+  font-size: 1em
+  color: #5f5f5f
+  text-shadow: 1px 0px 0px #fff
+
+  a, a .literal
+    base-link()
+
+
+  ul, ol
+    margin-left: 1.5em
+    margin-bottom: 1.5em
+    ul, ol
+      margin-bottom: 0
+
+  pre, code, tt
+    font-family: code-font
+
+  ul
+    list-style: square
+
+  li
+    line-height: 1.4em
+    margin: 0 0 1em 0
+
+  p
+    margin-bottom: 1.5em
+
+
+  dl
+    margin-bottom: 1.5em
+    dt
+      font-size: 1.3em
+      padding-bottom: 5px
+      em
+        font-style: normal
+    dd
+      font-size: 0.9em
+      border-left: 2px solid #ddd
+      margin-bottom: 1.5em
+      padding: 5px 10px
+      color: #888
+
+      p:last-child
+        margin: 0
+
+  table
+    border-collapse: collapse
+    margin-bottom: 1.5em
+    td, th
+      padding: 10px 5px
+      fix-margin()
+    tr:nth-child(odd)
+      td, th
+        background: #f0f0f0
+
+  table.field-list
+    border: 1px solid #ddd
+    font-size: 80%
+    color: #999
+    th
+      text-align: right
+      margin-right: 20px
+      white-space: nowrap
+    td
+      width: 100%
+    tr
+      td, th
+        padding: 0.5em 1em
+        background: #fdfdfd
+
+  .rubric
+    font-family: title-font
+    font-weight: normal
+    margin: 1.5em 0 0.7em 0
+    color: #4f4f4f
+    padding: 10px 0
+
+  p.rubric
+    border-bottom: 1px solid #ddd
+    line-height: 0.4em
+    margin-bottom: 2em
+    em
+      font-size: 170%
+      background: #f3f3f3
+      padding: 0 10px
+      margin: 0 20px
+      font-style: normal
+      display: inline-block
+      position: relative
+      top: 0.45em
+
+  h1
+    font-size: 250%
+  h2
+    font-size: 200%
+  h3
+    font-size: 170%
+  h4
+    font-size: 150%
+  h5
+    font-size: 130%
+  h6
+    font-size: 120%
+
+  h1, h2, h3, h4, h5, h6
+    @extend .body .rubric
+    border-top: 1px solid #ddd
+    color: #369
+
+  .hidden-heading
+    h1, h2, h3, h4, h5, h6
+      display: none
+
+  h1, h2, h3, h4, h5, h6, dt
+    .headerlink
+      transition: linear 0.5s
+      opacity: 0.3
+      margin-left: 20px
+      color: #ccc
+      text-decoration: none
+
+    &:hover .headerlink
+      color: #369
+      transition: none
+      opacity: 0.5
+
+  .section, dt
+    &:target .headerlink
+      opacity: 0.3
+      color: #69a
+
+
+  pre
+    background: #fff
+    border: 1px solid #ccc
+    font-size: 13px
+    padding: 10px
+    margin-bottom: 1.5em
+
+  .highlighttable
+    width: 100%
+    td.linenos, td.code
+      padding: 0
+    td.code
+      width: 100%
+    td.linenos pre
+      background: #ddd
+      border-right: none
+      text-shadow: none
+      color: #999
+      
+
+  .literal
+    color: #7f8c8d
+    padding: 2px 5px
+    font-weight: normal
+    &::before
+      content: "`"
+    &::after
+      content: "'"
+
+  .admonition, .sidebar
+    border: 1px solid #ccc
+    background: #ecf0f1
+    font-size: 90%
+    padding: 20px
+    color: #777
+    margin-bottom: 1.5em
+
+    &.seealso
+      background: #ecf0f1
+      border-color: #bdc3c7
+
+    &.warning
+      background: lighten(#f1c40f, 80%)
+      border-color: #f1c40f
+
+    .admonition-title, .sidebar-title
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+      line-height: 1.5em
+      font-size: 1.2em
+      font-weight: normal
+      text-transform: uppercase
+      font-family: title-font
+      color: #4f4f4f
+
+  .detail-link
+    background: -webkit-linear-gradient(bottom, #f3f3f3, #ddd 10%, #f3f3f3 90%);
+    padding: 5px 0
+    font-size: 2em
+    font-weight: bold
+    margin: -0.5em 0 0.5em 0
+    opacity: 0.5
+    em
+      font-style: normal
+    a
+      color: #555
+      display: block
+      text-align: center
+      font-weight: bold
+      text-transform: uppercase
+    &:hover
+      opacity: 1
+
+  .sidebar
+    width: 40%
+    float: right
+    margin: 0 0 20px 20px
+
+  .overview-list .hlist
+    width: 100%
+    td
+      vertical-align: top
+      width: 50%
+      background: none
+    td:first-child ul
+      margin-left: 0
+    ul
+      list-style: none
+    li
+      margin-bottom: 1.4em
+    dt
+      font-size: 1.3em
+      font-weight: bold
+      line-height: 100%
+      padding-bottom: 10px
+      em
+        font-style: normal
+    dd
+      font-size: 0.8em
+      line-height: 1.5em
+      color: #aaa
+      border: none
+      margin: 0
+      padding: 0
+    dl:hover dd
+      color: #777
+
+
+  .platform-support
+    list-style: none
+    text-align: center
+    li
+      display: inline-block
+      width: 75px
+      margin-right: 20px
+      padding-top: 70px
+      text-align: center
+      font-weight: bold
+      color: #999
+      background: url(platforms-64.png) no-repeat top left
+      margin-bottom: 20px
+    .nodejs
+      background: url(platform-node.png) no-repeat top left
+      width: 241px
+    .ie
+      background-position: -280px 0px
+    .safari
+      background-position: -210px 0px
+    .opera
+      background-position: -140px 0px
+    .firefox
+      background-position: -70px 0px
+    .chrome
+      background-position: 0px 0px
+
+  // Domain documentation
+  dl.function,
+  dl.data,
+  dl.exception,
+  dl.attribute,
+  dl.method,
+  dl.staticmethod,
+  dl.classmethod,
+  dl.class
+    border-bottom: 1px solid #ddd
+    margin-bottom: 2.5em
+    &:last-of-type
+      border-width: 0px
+    & ~ p
+      border-top: 1px solid #ddd
+      padding-top: 20px
+    dt
+      color: #bbb
+      position: relative
+    dt::after
+      font-size: 12px
+      color: #cfcfcf
+      position: absolute
+      left: 0
+      top: -1em
+      text-transform: uppercase
+      font-weight: 600
+    .descname, em
+      color: #555
+    em.property
+      display: none
+    dd
+      border: none
+      margin: 0
+      padding: 10px 0 0 20px
+
+  dl.function > dt::after
+    content: "function"
+  dl.data > dt::after
+    content: "data"
+  dl.attribute > dt::after
+    content: "attribute"
+  dl.method > dt::after
+    content: "method"
+  dl.class > dt::after
+    content: "class"
+  dl.exception > dt::after
+    content: "exception"
+  dl.staticmethod > dt::after
+    content: "static method"
+  dl.classmethod > dt::after
+    content: "class method"
+
+
+  // Search pages
+  #search-page
+    .context
+      font-size: 80%
+      color: #aaa
+      .highlighted
+        color: #555
+        background: lightyellow
+        border: 1px solid #ddd
+        padding: 3px 7px
+
+    ul.search li
+      margin-bottom: 20px
+      border-bottom: 1px solid #ddd
+      
+    .hint
+      border: 1px solid #ddd
+      border-width: 1px 0
+      color: #999
+      padding: 10px 0
+      font-size: 0.9em
+      margin: 5px 0 15px 0
+
+    #search-progress
+      display: block
+      text-align: right
+      font-size: 0.7em
+      color: #383
+      position: relative
+      bottom: 50px
+      
+      
+    input[type="search"]
+      width: 930px
+      padding: 0 10px
+      line-height: 32px
+      height: 32px
+      color: #777
+      border: 1px solid #ddd
+      border-radius: 3px
+      &:focus
+        outline: none
+        box-shadow: rgba(64, 128, 255, 0.6) 0 0 5px
+        border-color: #69a
+        
+.chapter-navigation
+  margin-top: 2em
+  border: 1px solid #d0d0d0
+  border-width: 1px 0
+  padding: 1em 0.5em
+
+  .previous, .next
+    display: inline-block
+    width: 50%
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    color: #525252
+    vertical-align: top
+    font-weight: bold
+
+  .next
+    text-align: right
+    &:after
+      content: " »"
+
+  .previous:before
+    content: "« "
