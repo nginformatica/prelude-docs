@@ -1,0 +1,4 @@
+#header .project-version {
+  top: {{ theme_version_y }};
+  left: {{ theme_version_x }};
+}
