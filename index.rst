@@ -42,6 +42,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    sintaxe_do
    sintaxe_aplicacao
    sintaxe_retencao
+   sintaxe_separacao
 
 **Tipos de Funções**:
 
