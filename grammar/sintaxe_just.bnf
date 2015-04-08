@@ -1,0 +1,1 @@
+just ::= Just <ident> -> <ident> Receives <expr>

@@ -44,6 +44,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    sintaxe_retencao
    sintaxe_separacao
    sintaxe_on
+   sintaxe_just
 
 **Tipos de Funções**:
 
@@ -58,4 +59,4 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
 
 Marcelo Camargo <marcelo.camargo@ngi.com.br> <marcelocamargo@linuxmail.org>
 
-Última modificação por **Marcelo Camargo** às 16:53 do dia 25/03/2015.
+Última modificação por **Marcelo Camargo** às 15:02 do dia 08/04/2015.
