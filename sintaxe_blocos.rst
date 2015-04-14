@@ -10,6 +10,8 @@ Blocos são, por padrão, definidos em AdvPL como ``{ |Param| Expression }``.
 A única função dessa abstração é aplicar um *syntactic sugar* para
 ``Fun ( Param ) -> Expression``.
 
+Nota: ``Lambda ( Param ) -> Expression`` também é válido.
+
 ----------------
 Definição Formal
 ----------------

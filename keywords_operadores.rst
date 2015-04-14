@@ -42,3 +42,10 @@ Operadores
 +----------+----------------+--------------------------+
 |    And   |     .And.      |          T_AND           |
 +----------+----------------+--------------------------+
+
+-----------------
+Operador Ternário
+-----------------
+
+Foi implementado **If** como expressão, retornando valores, em sua equivalência
+a ``IIf``, onde podemos fazer, por exemplo: ``Let cName <- If 1 < 2 Then "Foo" Else "Bar"``.

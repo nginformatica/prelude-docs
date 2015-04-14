@@ -46,6 +46,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    sintaxe_on
    sintaxe_just
    keywords_operadores
+   gerenciador_pacotes
 
 **Tipos de Funções**:
 

@@ -1,1 +1,2 @@
 fun ::= Fun ( [ <ident> [, <ident> [, <ident> ] ] ] ) -> <expr>
+lambda ::= Lambda ( [ <ident> [, <ident> [, <ident> ] ] ] ): <expr>
