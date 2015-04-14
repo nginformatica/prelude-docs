@@ -4,7 +4,7 @@
 Sintaxe Básica
 ==============
 
-O Prelude HB/AdvPL também estende uma sintaxe específica através do pré-processador, permitindo várias formas de expressar uma mesma coisa e, ainda, mantendo compatibilidade com código legado.
+O Prelude AdvPL/Harbour também estende uma sintaxe específica através do pré-processador, permitindo várias formas de expressar uma mesma coisa e, ainda, mantendo compatibilidade com código legado.
 
 ------
 Padrão

@@ -45,6 +45,7 @@ Algumas de suas validações aceitáveis são ``CPF``, ``CNPJ``, ``Name``, ``Eve
    sintaxe_separacao
    sintaxe_on
    sintaxe_just
+   keywords_operadores
 
 **Tipos de Funções**:
 
