@@ -38,6 +38,10 @@ Operadores
 +----------+----------------+--------------------------+
 |    And   |     .And.      |          T_AND           |
 +----------+----------------+--------------------------+
+|   ~-     |    (... - 1)   |     T_LTADPOLE           |
++----------+----------------+--------------------------+
+|   -~     |    (... + 1)   |     T_RTADPOLE           |
++----------+----------------+--------------------------+
 
 -----------------
 Operador Ternário
@@ -45,3 +49,12 @@ Operador Ternário
 
 Foi implementado **If** como expressão, retornando valores, em sua equivalência
 a ``IIf``, onde podemos fazer, por exemplo: ``Let cName <- If 1 < 2 Then "Foo" Else "Bar"``.
+
+-------------------------
+Operador Tadpole (Girino)
+-------------------------
+
+Um operador herdado de C++, é, respectivamente, a equivalência de ``++`` e ``--`` para ``-~`` e ``~-``
+sem modificar o valor original das variáveis repassadas, onde, por exemplo, ``~-cAge`` equivale a ``cAge - 1`` e
+``-~cAge`` a ``cAge + 1``, tal que como analogia, faz se que o girino está nadando para "fora" ou para "dentro"
+da variável, aplicando a ação determinada. 
